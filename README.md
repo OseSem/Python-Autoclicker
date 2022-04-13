@@ -6,3 +6,4 @@
 
 ### Spammer: "python3 spammer.py"
 315 cps right click :)
+hold "b" to spam!
