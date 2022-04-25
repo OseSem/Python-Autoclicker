@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import pyautogui, keyboard, datetime
 
 class bcolors:
@@ -11,11 +12,15 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
+=======
+import pyautogui, time, threading, keyboard, sys
+>>>>>>> f0ca2f848c19bdc958a222d2a66153b10eb57ac2
 
 while True:
     try:  # used try so that if user pressed other than the given key error will not be shown
         if keyboard.is_pressed('b'):  # if key 'q' is pressed 
             pyautogui.rightClick()
+<<<<<<< HEAD
             pyautogui.PAUSE = 0.025
             clicked_format = f"{bcolors.OKGREEN}{datetime.datetime.now().strftime('%m/%d/%Y [%H:%M:%S]')}{bcolors.OKCYAN} {bcolors.BOLD}Leftclicked 1 {bcolors.OKCYAN}time{bcolors.ENDC}"
             print(clicked_format)
@@ -24,5 +29,8 @@ while True:
             pyautogui.PAUSE = 0.025
             clicked_format = f"{bcolors.OKGREEN}{datetime.datetime.now().strftime('%m/%d/%Y [%H:%M:%S]')}{bcolors.OKCYAN} {bcolors.BOLD}Rightclicked 1 {bcolors.OKCYAN}time{bcolors.ENDC}"
             print(clicked_format)
+=======
+            pyautogui.PAUSE = 0.001
+>>>>>>> f0ca2f848c19bdc958a222d2a66153b10eb57ac2
     except:
         pass
